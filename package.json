@@ -1,17 +1,50 @@
 {
-  "name": "cypresss--projects",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "cypress": "^13.3.2",
+    "node-fetch": "^3.3.2"
   },
-  "keywords": [],
+  "name": "cypressprojects_001",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "cypress-slack-reporter": "^1.5.3",
+    "cypress-slow-down": "^1.2.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "openmode": "npx cypress open",
+    "runmode": "npx cypress run",
+    "run1": "npx cypress run --spec cypress/e2e/AddtoBag.cy.js",
+    "jenkins":"npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome",
+    "jenkins2":"npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --headed",
+    "onlyone":"npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --spec cypress\\e2e\\AddtoBag.cy.js"
+
+  },
+  "commands": {
+    "highlightLog": "path/to/your/custom/commands/highlightLog.js"
+  },
+  "slackWebhookUrl": "https://hooks.slack.com/services/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",
+  "channel": "#general",
+  "username": "Cypress Test Reporter",
+  "emoji": ":robot_face:",
+  "results": {
+    "overallResult": true,
+    "suiteResult": true,
+    "testResult": true
+  },
+  
+    "reporter": "cypress-slack-reporter",
+    "reporterOptions": {
+      "slackWebhookUrl": "https://hooks.slack.com/services/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",
+      "message": "cypress\\e2e\\slack-messages.cy.js"
+      
+    },
+  
+    "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^13.3.1",
-    "mochawesome-merge": "^4.3.0",
-    "mochawesome-report-generator": "^6.2.0"
-  }
+  "description": ""
 }
