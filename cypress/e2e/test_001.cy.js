@@ -6,7 +6,7 @@
 
 it('Store_Search',function() { 
    
-cy.visit('http://lucky.nushop.kaip.in/') 
+cy.visit('http://lucky.nushop.kaip.in/') ;
 cy.wait(7000)
 cy.get(':nth-child(1) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr').click()
 cy.get(':nth-child(2) > .css-1bkty0y').click()
