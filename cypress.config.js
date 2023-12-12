@@ -1,15 +1,24 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'o8bhvp',
+  reporter:'cypress-mochawesome-reporter', // html reports 
 
-  e2e: {
-    pageLoadTimeout:10000,
+  e2e: { 
+    watchForFileChanges:false,
+    video: true,
+    multiple: true ,
     
-    // followRedirect:true,
+    defaultCommandTimeout:10000,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-     
+       screenshotOnRunFailure=true;
+       trashAssetsBeforeRuns =true;
+            require('cypress-mochawesome-reporter/plugin') (on); // for html reports 
 
+      // implement node event listeners here
     },
+     experimentalRunAllSpecs:true, 
+    
+
   },
 });
