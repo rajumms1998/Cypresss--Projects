@@ -10,7 +10,7 @@ constructor()
          {
    this.Coupon_Code = this.Coupon_Code_generator();
    this. customer_login_for_bumper= this.generateMobileNUmber();
-  this.slack = this.sendSlackAlert();
+   this.slack = this.sendSlackAlert();
       }
 
   generateMobileNUmber() {
@@ -28,12 +28,12 @@ constructor()
     return mobilenumber + restOfNumber
   }
 
-   sendSlackAlert = (message) => cy.request('https://hooks.slack.com/services/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', {
-    method: 'POST',
-    body: JSON.stringify({ text: message }),
-    headers: { 'Content-Type': 'application/json' }
+  //  sendSlackAlert = (message) => cy.request('https://hooks.slack.com/services/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', {
+  //   method: 'POST',
+  //   body: JSON.stringify({ text: message }),
+  //   headers: { 'Content-Type': 'application/json' }
   
-  })
+  // })
 
 
         

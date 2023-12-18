@@ -7,7 +7,7 @@ const ms1 = new rando(); //// work on it
  // slowCypressDown(1000)
 
 describe("Lucky_Store", () => {
-     it.only("Coupon_Validation", () => {
+    it.only("Coupon_Validation", () => {
     ms.loginnnnnn();
     cy.wait(2000);
     cy.visit("http://v2.nushop-dashboard.kaip.in/offers");
@@ -80,10 +80,6 @@ describe("Lucky_Store", () => {
     cy.get('.css-ql9309').click().type(`couponcode${ms1.Coupon_Code}`)
     
     cy.get('.css-elnhgp').click(); // apply button 
-
-  
-  
-
 
     cy.get(".css-7yd8vv > :nth-child(4)").then(($text) => {
       const offrestext = $text.text();    // getting the text in payment page 

@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   projectId: 'o8bhvp',
- // reporter:'cypress-mochawesome-reporter', // html reports 
+ reporter:'cypress-mochawesome-reporter', // html reports 
 
   e2e: { 
     watchForFileChanges:false,
@@ -13,12 +13,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
        screenshotOnRunFailure=true;
        trashAssetsBeforeRuns =true;
-           // require('cypress-mochawesome-reporter/plugin') (on); // for html reports 
+          require('cypress-mochawesome-reporter/plugin') (on); // for html reports 
 
-      // implement node event listeners here
+      // implement node event listeners he  re
     },
      experimentalRunAllSpecs:true, 
     
 
   },
 });
+  

@@ -2,9 +2,6 @@
 import 'cypress-file-upload'
 import { LoginPage } from "./DashPom.cy"
 
-
-
-
 const ms= new LoginPage()
 
 describe("customization flow",function(){

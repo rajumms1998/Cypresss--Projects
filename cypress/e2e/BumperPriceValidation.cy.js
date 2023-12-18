@@ -7,8 +7,6 @@ import { rando } from "./random.cy";
 const stage_login = new LoginPage();
 const user_number = new rando();
 
-
-
 describe("BUMPER_CUPON", function() {
   
   it("BUMPER COUPON VALIDATION", () => {
@@ -42,7 +40,6 @@ describe("BUMPER_CUPON", function() {
             cy.get(':nth-child(7) > .ChipButton_chip-button__xXNaz').click()
             cy.screenshot();
          }
-         user_number.sendSlackAlert();
 
           }) 
   });
