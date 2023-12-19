@@ -7,9 +7,9 @@ module.exports = defineConfig({
   e2e: { 
     watchForFileChanges:false,
     video: true,
-    multiple: true ,
+    multiple: true ,npx, 
     
-    defaultCommandTimeout:10000,
+    defaultCommandTimeout: 10000,
     setupNodeEvents(on, config) {
        screenshotOnRunFailure=true;
        trashAssetsBeforeRuns =true;
