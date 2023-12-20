@@ -20,7 +20,7 @@
     "run1": "npx cypress run --spec cypress/e2e/AddtoBag.cy.js",
     "jenkins": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome",
     "jenkins2": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --headed",
-    "onlyone": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --spec cypress\\e2e\\AddtoBag.cy.js"
+    "onlyone": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --spec cypress\\e2e\\Stage\\AddtoBag.cy.js"
   },
   "commands": {
     "highlightLog": "path/to/your/custom/commands/highlightLog.js"
