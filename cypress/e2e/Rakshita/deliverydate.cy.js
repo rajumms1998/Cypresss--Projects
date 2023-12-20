@@ -1,7 +1,6 @@
 //<reference types="cypress"/>
 import { loginpage } from "./pom.cy"
 const ms = new loginpage()
-
 describe('Display Delivery date',function(){
 
     it("add delivery date",function(){
@@ -107,6 +106,6 @@ describe('Display Delivery date',function(){
     cy.scrollTo(0,1000)
     cy.get(':nth-child(1) > .css-7xhk2y > .css-uhgfle').should('not.exist')
 */
-    })
+        })
         
     })
