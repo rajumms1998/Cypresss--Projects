@@ -4,13 +4,13 @@ import { rando } from "./random.cy";
 
 const ms = new LoginPage();
 const ms1 = new rando(); //// work on it
- // slowCypressDown(1000)
+ // slowCypressDown(1000)   
 
 describe("Lucky_Store", () => {
-    it.only("Coupon_Validation", () => {
+    it("Coupon_Validation", () => {
     ms.loginnnnnn();
     cy.wait(2000);
-    cy.visit("http://v2.nushop-dashboard.kaip.in/offers");
+    cy.visit("http://v2.nushop-dashboard.kaip.in/offers"); 
     cy.wait(2000);
 
     cy.get(".Text_subtitles-colored__s5ggG > .tab").click();
