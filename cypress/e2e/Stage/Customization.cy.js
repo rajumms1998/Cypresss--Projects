@@ -6,14 +6,14 @@ const ms= new LoginPage()
 
 describe("customization flow",function(){
 
-    it ("Adding the Custom add and Creating the Customized Product and Verifying in the Website ",function(){
+    it.only("Adding the Custom add and Creating the Customized Product and Verifying in the Website ",function(){
 
     ms.loginnnnnn();
     cy.wait(3000)
     
     cy.visit("http://v2.nushop-dashboard.kaip.in/website/customisation-flow")
     cy.get('.Text_subtitles-colored__s5ggG > .tab').click();
-    cy.get('.rs-input').click().type("Automation 001");
+    cy.get('.rs-input').click().type("Automation 003");
     // cy.get('.rs-uploader-trigger > .Flexbox_flex-column__cNkZ2').click() 
     cy.xpath("//*[@id='root']/section/section/div[2]/div/section/section/div[1]/div[2]/div/div[2]/div/div[1]/input").click({force: true}).attachFile({filePath:'Red_leather_cricket_ball.jpg',fileName:'myfile'})
     cy.get('.ChipButton_chip-button__xXNaz').click()
@@ -30,7 +30,7 @@ describe("customization flow",function(){
   
   const nam = cy.xpath("//*[@id='root']/section/section/div[2]/div/section/div[1]/div[2]/div")
  
-if (nam.should('include.text','Automation 001')){
+if (nam.should('include.text','Automation 003')){
 
     cy.xpath('//*[@id="root"]/section/section/div[2]/div/section/div[1]/div[2]/div/div[3]/div/button').last().click();
        

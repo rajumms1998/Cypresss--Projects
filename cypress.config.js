@@ -7,7 +7,7 @@ module.exports = defineConfig({
   e2e: { 
     watchForFileChanges:false,
     video: true,
-    multiple: true ,npx, 
+    multiple: true, 
     
     defaultCommandTimeout: 10000,
     setupNodeEvents(on, config) {
