@@ -1,6 +1,6 @@
 
 import { LoginPage } from "./DashPom.cy";
-import { rando } from "./random.cy";
+import { rando } from "./random.cy"
 
 
 
@@ -44,7 +44,7 @@ describe("BUMPER_CUPON", function() {
           }) 
   });
  
-   it.only("Verifying the Bumper Coupon is activation after First Order",function(){
+   it("Verifying the Bumper Coupon is activation after First Order",function() {
 
             cy.visit('http://lucky.nushop.kaip.in',{failOnStatusCode:false}) 
             cy.wait(2000)

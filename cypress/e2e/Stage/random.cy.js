@@ -10,7 +10,7 @@ constructor()
          {
    this.Coupon_Code = this.Coupon_Code_generator();
    this. customer_login_for_bumper= this.generateMobileNUmber();
-  // this.slack = this.sendSlackAlert();
+  
       }
 
   generateMobileNUmber() {
