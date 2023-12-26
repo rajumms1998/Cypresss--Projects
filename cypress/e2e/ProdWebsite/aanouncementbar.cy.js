@@ -16,22 +16,4 @@ cy.get(':nth-child(2) > .Flexbox_flex-column__cNkZ2 > .rs-flex-box-grid-item-24 
 cy.get('.rs-picker-toolbar-right > .rs-btn').click()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
