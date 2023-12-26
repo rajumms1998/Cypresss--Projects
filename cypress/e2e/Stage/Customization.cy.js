@@ -117,14 +117,11 @@ cy.get('[data-key="size"] > .rs-picker-select-menu-item').click();
  cy.wait(1000)
  cy.get('.rs-btn-toolbar > .Button_button-primary__9i0Rz').click();   // Last Page 
 
- cy.screenshot();
+cy.screenshot();
 
-        }) 
+        })
+     
     })
-
-
-
-
 it.skip("Verifying the Create Catalog Through Search and Placing the Order with Custom Prices",function(){
 
 cy.visit("https://rajuprod.shopdeck.com")

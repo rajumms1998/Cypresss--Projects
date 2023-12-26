@@ -7,12 +7,7 @@ module.exports = defineConfig({
   e2e: { 
     watchForFileChanges:false,
     video: true,
-    multiple: true, 
-    chromeWebSecurity:false,
-  
-     // baseUrl: "http://v2.nushop-dashboard.kaip.in",
-     
-    
+    multiple: true ,
     
     defaultCommandTimeout: 10000,
     setupNodeEvents(on, config) {
