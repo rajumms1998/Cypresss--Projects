@@ -1,6 +1,6 @@
 
 
-  it('size chart image check',function(){
+  it('Product images check',function(){
 
   cy.visit('https://rajuprod.shopdeck.com/DW-4149-PRIYA-BLUE/catalogue/0Qjutf_m/xy80854V')
   

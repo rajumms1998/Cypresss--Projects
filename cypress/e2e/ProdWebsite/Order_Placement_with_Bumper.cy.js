@@ -7,7 +7,7 @@ describe("BUMPER_CUPON", function() {
             cy.wait(2000)
             cy.get(':nth-child(2) > .css-1bkty0y').click()
             cy.get('.css-1jt1w2w').click()
-            cy.get('.css-1jt1w2w').click() 
+            
             cy.get('.css-1vw8438').click().type("8309333476");
             cy.wait(2000)
             cy.get('.css-1jt1w2w').click()
