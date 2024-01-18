@@ -6,12 +6,11 @@ describe('Swipe Up Screen',function(){
 
     it("add swipe up screen",function(){
 
-        ms.login()
-        cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(5).click()
-        cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
-        cy.wait(1000)
-        cy.get('[href="/website/web-configuration"] > .Text_body2__0FftJ',{timeout:20_000}).click(parent)
-        cy.wait(2000)
+      ms.login()
+      cy.wait(2000)
+      cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()
+      cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
+      cy.get('a[href="/website/web-configuration"]',{timeout:20_000}).click(parent)
         cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(3).click()
         cy.get('input[placeholder="Fashion Store"]').clear()
         Cypress.on('uncaught:exception', (err, runnable, promise) => {
@@ -49,12 +48,11 @@ describe('Swipe Up Screen',function(){
 
         it("disable swipe up screen",function(){
 
-            ms.login()
-            cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(5).click()
-            cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
-            cy.wait(1000)
-            cy.get('[href="/website/web-configuration"] > .Text_body2__0FftJ',{timeout:20_000}).click(parent)
-            cy.wait(2000)
+          ms.login()
+          cy.wait(2000)
+          cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()
+          cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
+          cy.get('a[href="/website/web-configuration"]',{timeout:20_000}).click(parent)
             cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(3).click()
             cy.get('input[placeholder="Fashion Store"]').clear()
             Cypress.on('uncaught:exception', (err, runnable, promise) => {

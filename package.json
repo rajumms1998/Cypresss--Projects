@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "cypress": "^13.3.2",
+    "cypress": "^13.6.2",
     "node-fetch": "^3.3.2"
   },
   "name": "cypressprojects_001",

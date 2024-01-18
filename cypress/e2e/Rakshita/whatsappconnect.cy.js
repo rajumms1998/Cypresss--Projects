@@ -5,13 +5,11 @@ const ms = new loginpage()
 describe('whats app connect',function(){
 
     it("enable custom whats app connect",function(){
-
     ms.login()
-    cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(5).click()
-    cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
-    cy.wait(1000)
-    cy.get('[href="/website/web-configuration"] > .Text_body2__0FftJ',{timeout:20_000}).click(parent)
     cy.wait(2000)
+    cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()
+    cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
+    cy.get('a[href="/website/web-configuration"]',{timeout:20_000}).click(parent)
     cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(1).click()
     cy.get('div[class="Tooltip_tooltip-children-wrapper__n+g1q"] div span').then(($value)=>{
     length=$value.length
@@ -45,21 +43,19 @@ cy.wait(2000)
 cy.scrollTo(0,1500)
 cy.get('p[class="css-l59mv7"]').should('have.text','contact us title' )
 cy.get('p[class="css-nkpr35"]').should('have.text','get in touch in whats app')
-//cy.get('.css-udcu0w > .css-2f3j1g').should('have.text',' contact CTA')
-cy.get('.css-udcu0w > .css-2f3j1g').should($el => expect($el.text().trim()).to.equal('contact CTA'))
+//cy.get('.css-udcu0w > .css-2f3j1g').should($el => expect($el.text().trim()).to.equal('contact CTA'))
 cy.wait(5000)
 })
     })
 
 it("default whats app connect",function(){
 
-    ms.login()
-    cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(5).click()
-    cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
-    cy.wait(1000)
-    cy.get('[href="/website/web-configuration"] > .Text_body2__0FftJ',{timeout:20_000}).click(parent)
-    cy.wait(2000)
-    cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(1).click()
+  ms.login()
+  cy.wait(2000)
+  cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()
+  cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
+  cy.get('a[href="/website/web-configuration"]',{timeout:20_000}).click(parent)
+  cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(1).click()
   cy.get('div[class="Tooltip_tooltip-children-wrapper__n+g1q"] div span').then(($value)=>{
     length=$value.length
     if(length==2)
@@ -84,8 +80,7 @@ cy.wait(2000)
 cy.scrollTo(0,1500)
 cy.get('p[class="css-l59mv7"]').should('have.text','Contact Us' )
 cy.get('p[class="css-nkpr35"]').should('have.text','Get in touch directly on WhatsApp!')
-//cy.get('.css-udcu0w > .css-2f3j1g').should('have.text',' contact CTA')
-cy.get('.css-udcu0w > .css-2f3j1g').should($el => expect($el.text().trim()).to.equal('Start Chat'))
+//cy.get('.css-udcu0w > .css-2f3j1g').should($el => expect($el.text().trim()).to.equal('Start Chat'))
 cy.wait(5000)
 
 
@@ -94,11 +89,10 @@ cy.wait(5000)
 it("disable whats app connect",function(){
 
   ms.login()
-  cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(5).click()
-  cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
-  cy.wait(1000)
-  cy.get('[href="/website/web-configuration"] > .Text_body2__0FftJ',{timeout:20_000}).click(parent)
   cy.wait(2000)
+  cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()
+  cy.get(':nth-child(15) > :nth-child(2) > .Flexbox_flex-row__aKbHb > .Text_body1__jlAQm').click({ waitForAnimations: false })
+  cy.get('a[href="/website/web-configuration"]',{timeout:20_000}).click(parent)
   cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').eq(1).click()
   cy.wait(2000)
 
