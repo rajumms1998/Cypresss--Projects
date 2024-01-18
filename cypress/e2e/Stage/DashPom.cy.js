@@ -30,7 +30,7 @@ prodlogin(){
      cy.get('.Button_button-primary__9i0Rz').click()
 
     // cy.xpath('//*[@id="root"]/main/div/div/div/div[2]/div[1]/input').click().type("0000")
-    cy.wait (12000)
+    cy.wait (15000)
      cy.get('.Button_button-primary__9i0Rz').click()
 
 

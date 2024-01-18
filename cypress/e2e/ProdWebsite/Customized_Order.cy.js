@@ -7,7 +7,7 @@ cy.scrollTo(0,1200)
 
 cy.get('.css-mgeikb > .css-1iqd3x2').then(($el)=>{
 // cy.contains("NAME CHANGED TO NEW") DUE TO CACHEE
-cy.get(':nth-child(4) > .css-1bkty0y').click()
+cy.get(':nth-child(6) > .css-1bkty0y').click()
   
 })
  
@@ -18,7 +18,7 @@ cy.wait(2000)
 cy.get('.css-5tfm2q').click().type("NAME IS RAJUU");
 cy.get('.css-uxj08 > .css-1jt1w2w').click()
 
-cy.get('.css-1vw8438').click().type("8309333476");
+cy.get('.css-1mnj8i4').click().type("8309333476");
             cy.wait(2000)
             cy.get('.css-1jt1w2w').click()
             cy.get(':nth-child(2) > .css-pqx7va > .css-1mnj8i4 > .css-5tfm2q').type('rajuuu')

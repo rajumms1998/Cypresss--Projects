@@ -2,22 +2,42 @@
 
 ///<reference types="cypress"/>
 
+
+
 describe('Customer_Journey',function() {
-    it.skip("Ordering the Bag Products",function() {
+    it("Ordering the Bag Products",function() {
         cy.log("passsss")
 
         cy.visit('http://lucky.nushop.kaip.in',{failOnStatusCode:false}) 
         cy.wait(3000)
-        cy.get(':nth-child(1) > .css-nfl1fu > .css-1sf8q8u > .slick-slider > .slick-list > .slick-track > [data-index="1"] > :nth-child(1) > .css-1ikn04e > .css-1bkty0y > .css-zejslb > .css-15luse1 > .css-y7l8i8').click()
-        cy.wait(2000)
-        cy.get('.css-19qf114 > .css-2f3j1g').click();
-        cy.get('.ReactModal__Overlay').click()
+        cy.wrap([2,3,4]).each((index) => {
+           // cy.xpath("//*[@id='main']/section[1]/div/div[2]/div/div[2]/div/a/div[2]/div/button").click()
+           cy.get(':nth-child(1) > .css-nfl1fu > .css-1sf8q8u > .css-1timy0t > :nth-child(2) > .css-1bkty0y > .css-zejslb > .css-15luse1 > .css-y7l8i8').click()
+           cy.xpath("/html/body/div[6]/div/div/div/div[2]/button").click()
+            cy.xpath("/html/body/div[6]/div/div/div/div[2]/button").click();
+            cy.wait(1000)
+        })
+
+
+          
+
+
+        })
+
+    })
+
         
-        cy.get('.css-19qf114 > .css-2f3j1g').click({multiple: true })
-        cy.get('.css-hdm7wy > .css-uxj08').click()
-        cy.screenshot().log("Added to Bag");
+        
+        /*
+        
+        
+        
+        
+        
+        
+       
         cy.get('.css-1jt1w2w').click()
-        cy.get('.css-1vw8438').click().type("8309333478");
+        cy.get('.css-1vw8438').click().type(8309379000);
         cy.get('.css-1jt1w2w').click()
         cy.get(':nth-child(2) > .css-pqx7va > .css-1mnj8i4 > .css-5tfm2q').type('rajuuu')
         cy.get(':nth-child(3) > .css-pqx7va > .css-1mnj8i4 > .css-5tfm2q').type('517423')
@@ -36,10 +56,9 @@ describe('Customer_Journey',function() {
         }
         cy.get('.css-1jt1w2w').click()
 
-      
+      */
     
-    })
 
-})
+
 
 
