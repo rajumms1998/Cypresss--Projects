@@ -5,7 +5,7 @@
 
 describe('Adding the Products to Bag and then Placing the order',function() {
    
-  it("Placing the Bag Products",function() {
+    it("Placing the Bag Products",function() {
 
         cy.visit("https://rajuprod.shopdeck.com",{failOnStatusCode:false}) ;
         cy.wait(3000)
@@ -39,9 +39,13 @@ describe('Adding the Products to Bag and then Placing the order',function() {
         cy.get('.css-1jt1w2w').click() 
         cy.get('.css-1l968gz').click()
         
+    
+        cy.get('.css-1l968gz').click()
+        // Example with stubbing
+      //cy.stub(window, 'prompt').returns('yourOTP');
+      //cy.get('#submit-button').click(); // This assumes that OTP is entered via a prompt
 
-        cy.get('.css-1l968gz').click()    
-        cy.wait (12000)
+        cy.wait (10000)
         cy.get('.css-1jt1w2w').click(); // verify otp button 
 
 
