@@ -9,7 +9,7 @@ const ms1= new random();
 const Name = `NEWLY ADDED AUTOMATION ${ms1.Coupon_Code}`
 
 
-describe("New arrivals widget validation by Creating the New Product ", function() {
+describe("New arrivals widget validation by Creating the New Product", function() {
 
 
 it("Creating the New Product",function(){
@@ -60,7 +60,7 @@ cy.screenshot();
 
 })
  
-it.only("Verifying it in New Arrivals Widget", function(){
+it("Verifying it in New Arrivals Widget", function(){
 
 cy.visit("http://glasstheme.nushop.kaip.in");
 cy.get(':nth-child(1) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr')
