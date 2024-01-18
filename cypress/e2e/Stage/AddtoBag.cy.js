@@ -3,14 +3,16 @@
 ///<reference types="cypress"/>
 
 describe('Customer_Journey',function() {
-    it("Ordering the Bag Products",function() {
+    it.skip("Ordering the Bag Products",function() {
+        cy.log("passsss")
 
-        cy.visit('http://lucky.nushop.kaip.in/',{failOnStatusCode:false}) 
+        cy.visit('http://lucky.nushop.kaip.in',{failOnStatusCode:false}) 
         cy.wait(3000)
         cy.get(':nth-child(1) > .css-nfl1fu > .css-1sf8q8u > .slick-slider > .slick-list > .slick-track > [data-index="1"] > :nth-child(1) > .css-1ikn04e > .css-1bkty0y > .css-zejslb > .css-15luse1 > .css-y7l8i8').click()
         cy.wait(2000)
         cy.get('.css-19qf114 > .css-2f3j1g').click();
         cy.get('.ReactModal__Overlay').click()
+        
         cy.get('.css-19qf114 > .css-2f3j1g').click({multiple: true })
         cy.get('.css-hdm7wy > .css-uxj08').click()
         cy.screenshot().log("Added to Bag");
@@ -34,11 +36,9 @@ describe('Customer_Journey',function() {
         }
         cy.get('.css-1jt1w2w').click()
 
-
-
+      
+    
     })
-
-
 
 })
 

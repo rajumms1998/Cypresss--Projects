@@ -46,7 +46,7 @@ describe("BUMPER_CUPON", function() {
  
    it.only("Verifying the Bumper Coupon is activation after First Order",function(){
 
-            cy.visit('http://lucky.nushop.kaip.in/',{failOnStatusCode:false}) 
+            cy.visit('http://lucky.nushop.kaip.in',{failOnStatusCode:false}) 
             cy.wait(2000)
             cy.get(':nth-child(1) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr').click()
             cy.wait(2000)

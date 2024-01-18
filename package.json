@@ -11,12 +11,15 @@
     "cypress-mochawesome-reporter": "^3.7.0",
     "cypress-slack-reporter": "^1.5.3",
     "cypress-slow-down": "^1.2.1",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "wait-on": "^7.2.0"
   },
   "scripts": {
+  
     "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
     "openmode": "npx cypress open",
     "runmode": "npx cypress run",
+    "new": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01  --headed --browser chrome --spec cypress\\e2e\\Stage\\AddtoBag.cy.js",
     "run1": "npx cypress run --spec cypress/e2e/AddtoBag.cy.js",
     "jenkins": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome",
     "jenkins2": "npx cypress run --record --key 81a2ea75-6c40-4a36-8c78-f30f9c1b71cc --browser chrome --headed",
