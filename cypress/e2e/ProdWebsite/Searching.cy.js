@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-it('search function in website',()=>
+it('Search function in website',()=>
 {
 
     

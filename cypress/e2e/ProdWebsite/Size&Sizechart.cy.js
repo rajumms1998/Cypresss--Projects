@@ -15,9 +15,9 @@ cy.wait(1000)
 });
 
 
-it('Size picker check',()=>
+it.only('Size picker check',()=>
 {
-cy.visit('https://jerseykart.in/Argentina-Away-Jersey-World-Cup-22/catalogue/1_Bsxy5F/M-JAajQB')
+cy.visit('https://rajuprod.shopdeck.com/Raju-Testing-001/catalogue/Qb5putyF/-TIcUtcx')
 cy.scrollTo(0,1200)
 cy.get('div[class="css-bi55qy"]').eq(1).click()
 cy.get('div[class="css-10furzh"]').each(($el, index, $list) =>

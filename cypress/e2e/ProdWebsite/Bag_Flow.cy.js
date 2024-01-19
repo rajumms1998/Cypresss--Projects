@@ -10,11 +10,11 @@ describe('Adding the Products to Bag and then Placing the order',function() {
         cy.visit("https://rajuprod.shopdeck.com",{failOnStatusCode:false}) ;
         cy.wait(3000)
         
-        cy.get('.css-1l6x5qr').click();
+        cy.get(':nth-child(2) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr').click();
         cy.log("cliked the view all button from the all products Widget");
         cy.wait(2000)
         let i =2;
-        while(i<=3){
+        while(i<=5){
            cy.get(`:nth-child(${i}) > .css-1bkty0y > .css-zejslb > .css-15luse1 > .css-y7l8i8`).click();
            cy.get('.css-19qf114').click();
            cy.get('.ReactModal__Overlay').click();
@@ -24,6 +24,8 @@ describe('Adding the Products to Bag and then Placing the order',function() {
            i++; 
     
         }
+    
+  
     cy.get('.css-k8ajg4 > .css-uxj08 > .css-zixo5y > .css-2f3j1g').click(); // click on bag/cart button
     cy.log("Added To Bag") 
     cy.get('.css-1jt1w2w').click(); // checkout button 
@@ -41,9 +43,7 @@ describe('Adding the Products to Bag and then Placing the order',function() {
         
     
         cy.get('.css-1l968gz').click()
-        // Example with stubbing
-      //cy.stub(window, 'prompt').returns('yourOTP');
-      //cy.get('#submit-button').click(); // This assumes that OTP is entered via a prompt
+    
 
         cy.wait (10000)
         cy.get('.css-1jt1w2w').click(); // verify otp button 
