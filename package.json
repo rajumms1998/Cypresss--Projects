@@ -19,6 +19,7 @@
   },
   "scripts": {
     "rakshitha": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\Rakshita",
+    "raju": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\ProdWebsite",
     "newarrivals":"npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\ProdWebsite\\Newarrivals.cy.js",
     "newreport": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01  --headed --browser chrome --spec cypress\\e2e\\ProdWebsite\\SalesActivity.cy.js --reporter mocha-allure-reporter",
     "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",

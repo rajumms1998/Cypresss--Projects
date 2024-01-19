@@ -6,7 +6,7 @@ const ms = new LoginPage();
 
 describe('Creating the Collections', () => {
  
-    it('Creating the collections ', () => {
+    it('Creating the Manual collections ', () => {
  
     ms.loginnnnnn()
     cy.wait(2000)
@@ -29,7 +29,7 @@ describe('Creating the Collections', () => {
 
        
            cy.visit("http://v2.nushop-dashboard.kaip.in/website/collection/collection-list")
-        //cy.visit("https://rajuprod.shopdeck.com/Collections-Testing/collection/")
+          //cy.visit("https://rajuprod.shopdeck.com/Collections-Testing/collection/")
         
              cy.get(':nth-child(1) > .rs-col-xl-5.rs-col-md-5 > .Text_body2__0FftJ').invoke('text')
              .then((val)=>{
