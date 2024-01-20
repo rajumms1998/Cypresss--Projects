@@ -1,5 +1,5 @@
-describe("Recently Viewed Activity", function() {
-    it("Viewing the Product and Checking in the Recently Viewed Widget", function() {
+describe("Jenkins reports checking ", function() {
+    it("Reports in jenkins", function() {
 
 let x=10;
 let y=20;
