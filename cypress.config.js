@@ -8,7 +8,7 @@ module.exports = defineConfig({
  
   e2e: { 
     watchForFileChanges:false,
-    video: true,
+    //video: true,
     // multiple: true, 
     chromeWebSecurity:false,
     defaultCommandTimeout: 10000,
