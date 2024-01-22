@@ -18,7 +18,7 @@
     "wait-on": "^7.2.0"
   },
   "scripts": {
-    "test":"cypress run ",
+    "test":"cypress run",
     "rakshitha": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\Rakshita",
     "raju": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\ProdWebsite",
     "newarrivals": "npx cypress run --record --key 4efc7c2a-907e-461e-9c4d-a312ac9b6f01 --headed --browser chrome --spec cypress\\e2e\\ProdWebsite\\Newarrivals.cy.js",
