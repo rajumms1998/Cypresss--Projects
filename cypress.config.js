@@ -16,7 +16,7 @@ module.exports = defineConfig({
       
        screenshotOnRunFailure=true;
        trashAssetsBeforeRuns =true;
-          require('cypress-mochawesome-reporter/plugin') (on); // for html reports 
+          //require('cypress-mochawesome-reporter/plugin') (on); // for html reports 
           //allureWriter(on, config);
           //return config;
 
