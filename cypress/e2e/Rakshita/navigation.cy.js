@@ -54,7 +54,7 @@ describe('Navigation tab tests',function(){
             
         })
 
-        it.only("delete navigation",function(){
+        it("delete navigation",function(){
         ms.login()
         cy.wait(2000)
         cy.get('.SideNav_sidenav-iconholder__vuWmv').eq(6).click()

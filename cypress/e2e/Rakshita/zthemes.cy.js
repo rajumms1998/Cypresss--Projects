@@ -56,7 +56,10 @@ describe('Global theme task',function(){
     cy.wait(3000)
     cy.get('.FullScreenToggle_preview-full-screen-button__JFn6e').click()
     cy.wait(2000)
-    
+    //reset to Line theme
+    cy.get('h5[class="heading5 Text_subtitles-colored__s5ggG Text_mr-lg__egpT+"]').click()
+    cy.get('button[data-sd-event="websitePreset"]').eq(1).click()
+    cy.get('button[data-sd-event="saveGlobalThemeWebsitePresets"]').click()
         
     })
     })
