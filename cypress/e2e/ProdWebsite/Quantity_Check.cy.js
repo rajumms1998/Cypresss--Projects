@@ -12,6 +12,7 @@ cy.get('div[class="css-10furzh"]').each(($el, index, $list) =>
     cy.scrollTo(0,1200)
 })
 cy.get('button[class="css-1jt1w2w"]').click()
+cy.get('button[data-sd-event="sizePickerContinue"]').click()
 cy.get('input[class="css-1vw8438"]').type('8660557408')
 cy.get('button[class="css-1jt1w2w"]').click()
 cy.get('input[autocomplete="name"]').type('Rakshitha Gowthami A C')
