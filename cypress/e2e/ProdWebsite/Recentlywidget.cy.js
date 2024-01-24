@@ -1,3 +1,4 @@
+
 describe("Recently Viewed Activity", function() {
   it("Viewing the Product and Checking in the Recently Viewed Widget", function() {
     cy.visit("https://rajuprod.shopdeck.com");

@@ -3,10 +3,10 @@
 describe("Sales Activity Checking on Website ", function() {
     
     it.only("Placing the Order and Verifying in Sales Widget ",function(){
-/*
+
     cy.visit ("https://rajuprod.shopdeck.com/RAJU-SIZE/catalogue/ghq6SNlV/hVXrgLPd")
 
-     cy.log("Testing the Allure Reports")
+    
      cy.get('.css-1jt1w2w').click()
    
      cy.get('.css-1vw8438').click().type("8309333476");
@@ -26,7 +26,7 @@ describe("Sales Activity Checking on Website ", function() {
             cy.get('.css-1jt1w2w').click() 
 
             cy.get('.css-emfhgx').click();
-*/
+
             cy.visit ("https://rajuprod.shopdeck.com/RAJU-SIZE/catalogue/ghq6SNlV/hVXrgLPd")
             cy.wait(1000)
             cy.scrollTo(0, 2300)

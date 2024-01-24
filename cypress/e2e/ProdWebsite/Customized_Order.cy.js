@@ -30,7 +30,7 @@ cy.get('.css-1mnj8i4').click().type("8309333476");
             cy.wait(4000)
             cy.get('#cod').click()
             cy.get('.css-1l968gz').click()
-            cy.wait (12000)
+            cy.wait (15000)
             
             cy.get('.css-1jt1w2w').click()
 

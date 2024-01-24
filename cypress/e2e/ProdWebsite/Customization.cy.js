@@ -83,7 +83,7 @@ cy.log("Customization Flow Has Created Successfully");
     })
 
 // Adding Custom flow to the Product
-it.only ("only catalog",function(){
+it("Creating the catalog with Added Custom flow",function(){
 
 ms.prodlogin()
  cy.wait(3000)
@@ -126,22 +126,12 @@ cy.get('[data-key="size"] > .rs-picker-select-menu-item').click();
  cy.wait(1000)
  cy.get('.rs-btn-toolbar > .Button_button-primary__9i0Rz').click();   // Last Page 
 
-<<<<<<< HEAD
  cy.screenshot();
 
         }) 
     })
 
-
-
-=======
-cy.screenshot();
-})
-        })
-     
->>>>>>> 4842fca731ea9e531fbc7808b9cb28d0b6ee35e6
-
-it.skip("Verifying the Create Catalog Through Search and Placing the Order with Custom Prices",function(){
+it("Verifying the Create Catalog Through Search and Placing the Order with Custom Prices",function(){
 
 cy.visit("https://rajuprod.shopdeck.com")
 //cy.xpath("//*[@id='page-header']/div[2]/div/div[1]/a/div/div/input").click().type("CUSTOMIZATION");

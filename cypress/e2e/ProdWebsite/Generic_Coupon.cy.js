@@ -7,7 +7,7 @@ const ms = new LoginPage();
 const ms1 = new random(); //// work on it
  // slowCypressDown(1000)
 
-describe("Creating thr Generic Coupon and its validation on website", () => {
+describe("Creating the Generic Coupon and its validation on website", () => {
     it("Coupon_Creation from Dashboard ", () => {
     
       ms.prodlogin();
@@ -53,7 +53,7 @@ describe("Creating thr Generic Coupon and its validation on website", () => {
       
       });
 
-     it.only("Validating the Created Coupon and apply the coupon", function () {
+     it("Validating the Created Coupon and apply the coupon", function () {
     cy.visit("https://rajuprod.shopdeck.com", { failOnStatusCode: false });
     cy.wait(2000);
     cy.get(':nth-child(2) > .css-1bkty0y > .css-zejslb > :nth-child(1) > .css-179t5g5 > .css-169inv6').click();
@@ -104,9 +104,9 @@ describe("Creating thr Generic Coupon and its validation on website", () => {
       cy.log(view);        // offer appplied -50
       if ($element === $text)
       {
-           cy.log('pass')
+           cy.log('Offer Apllied is same in checkout and Billing pages Hence the Validation is passed')
       }  else{
-        cy.log('fail')
+            cy.log('fail')
       }
       cy.screenshot();
      

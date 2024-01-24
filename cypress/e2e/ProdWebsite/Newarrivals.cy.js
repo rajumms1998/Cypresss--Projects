@@ -9,15 +9,16 @@ const ms1= new random();
 const Name = `NEWLY ADDED AUTOMATION ${ms1.Coupon_Code}`
 
 
-describe("New arrivals widget validation by Creating the New Product ", function() {
+describe("New arrivals widget validation by Creating the New Product", function() {
 
 
 it("Creating the New Product",function(){
 
-ms.loginnnnnn();
+ms.prodlogin();
 cy.wait(2000)
-cy.visit("http://v2.nushop-dashboard.kaip.in/product/manage/create");
-cy.get(':nth-child(3) > .tab').click()
+//cy.visit("http://v2.nushop-dashboard.kaip.in/product/manage/create");
+cy.visit("https://pro.shopdeck.com/product/manage/create");
+//cy.get(':nth-child(3) > .tab').click()
 cy.wait(2000)
 cy.xpath("//*[@id='root']/section/section/section/section/section[1]/div/div[1]/div/div[2]/input").click({force: true}).attachFile('Red_leather_cricket_ball.jpg')
  
@@ -60,12 +61,14 @@ cy.screenshot();
 
 })
  
-it.only("Verifying it in New Arrivals Widget", function(){
+it("Verifying it in New Arrivals Widget", function(){
 
-cy.visit("http://glasstheme.nushop.kaip.in");
-cy.get(':nth-child(1) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr')
+//cy.visit("http://glasstheme.nushop.kaip.in");
+cy.visit("https://rajuprod.shopdeck.com")   
+cy.reload();
 
-cy.get(':nth-child(1) > .css-nfl1fu > .css-1sf8q8u > .css-1timy0t > :nth-child(1) > .css-1bkty0y > .css-zejslb > :nth-child(1) > .css-f23be2').invoke('text').then((val)=> {
+cy.get(':nth-child(3) > .css-nfl1fu > .css-1gt500f > :nth-child(2) > a > .css-1l6x5qr').click()
+cy.get(':nth-child(1) > .css-1bkty0y > .css-zejslb > :nth-child(1) > .css-f23be2').invoke('text').then((val)=> {
  cy.log(val)
 
     })

@@ -11,7 +11,9 @@ cy.wait(5000)
 cy.get('.Text_subtitles-colored__s5ggG > .tab').click()
 
 const sequentialValues = ['001', '002', '003', '004'];
+
 cy.get(':nth-child(2) > .rs-input').each((inputField, index) => {
+    
     const Testimonialname = cy.wrap(inputField).type("Testimonial"+sequentialValues[1]);
 
     cy.get(':nth-child(12) > .rs-input').click().type("3")
@@ -19,10 +21,11 @@ cy.get(':nth-child(2) > .rs-input').each((inputField, index) => {
     
     
     
-   // cy.get('.Flexbox_flex-row__aKbHb > .Button_button-primary__9i0Rz').click()
+   cy.get('.Flexbox_flex-row__aKbHb > .Button_button-primary__9i0Rz').click()
   
-  });
+    });
 });
+
   it("Verifying it from Website", function(){
   cy.visit("https://rajuprod.shopdeck.com")
   cy.get('.css-j4o0ms').click()
