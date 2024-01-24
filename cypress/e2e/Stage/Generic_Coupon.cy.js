@@ -6,13 +6,12 @@ const ms = new LoginPage();
 const ms1 = new rando(); //// work on it
  // slowCypressDown(1000)   
 
-<<<<<<<< HEAD:cypress/e2e/ProdWebsite/Generic_Coupon.cy.js
-describe("Creating thr Generic Coupon and its validation on website", () => {
+
+
+    describe("Creating thr Generic Coupon and its validation on website", () => {
+    
     it("Coupon_Creation from Dashboard ", () => {
-========
-describe("Lucky_Store", () => {
-    it("Coupon_Validation", () => {
->>>>>>>> 0120d4514e46f5473c0fab333f2ee0cdd44c34c6:cypress/e2e/Stage/Generic_Coupon.cy.js
+
     ms.loginnnnnn();
     
     cy.wait(2000);
@@ -99,6 +98,7 @@ describe("Lucky_Store", () => {
     cy.get(".css-1l968gz").click();
     cy.wait(2000);
     let i = 1;
+    
     while (i <= 4) {
       cy.get(":nth-child(" + i + ") > .css-tpv9t0")
         .click()
