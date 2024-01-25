@@ -5,7 +5,8 @@ let x=10;
 let y=20;
 cy.log(x+y);
 
-cy.log("Build 1 reports")
+cy.log("Build 2 reports second time ")
+
 
 
 
