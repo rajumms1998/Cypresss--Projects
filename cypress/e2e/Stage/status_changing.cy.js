@@ -1,7 +1,7 @@
 
 
 
-const AWB_Number_intransit="DUM7MNOCRT2P";
+const AWB_Number_intransit="DUMPPQFMSPGI";
 
 
 describe('Status Change APIs', function () {

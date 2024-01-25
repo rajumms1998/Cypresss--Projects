@@ -6,8 +6,6 @@ const ms = new LoginPage();
 const ms1 = new rando(); //// work on it
  // slowCypressDown(1000)   
 
-
-
     describe("Creating thr Generic Coupon and its validation on website", () => {
     
     it("Coupon_Creation from Dashboard ", () => {

@@ -1,12 +1,7 @@
 {
   "dependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.1",
-<<<<<<< HEAD
-    "cypress": "^13.6.1",
-    "cypress-downloadfile": "^1.2.3",
-=======
     "cypress": "^13.6.3",
->>>>>>> f35a8378c042036164b44766b80e2d0d8ae4652f
     "node-fetch": "^3.3.2"
   },
   "name": "cypressprojects_001",
