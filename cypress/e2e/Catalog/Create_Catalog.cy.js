@@ -2,7 +2,7 @@
 ///<reference types = "cypress-xpath"/>
 import 'cypress-file-upload' 
 
-import { LoginPage } from "../DashPom.cy"
+import { LoginPage} from "../Stage/DashPom.cy"
 
 
 
@@ -10,12 +10,14 @@ const ms = new LoginPage();
 
 describe("Catalog_Products Tab",function(){
     it('Catalog_Creation', () => {
+        cy.log("catalog file")
+       
         ms.loginnnnnn();
         cy.wait(2000)
         cy.visit("http://43.205.92.177/product/manage/upload");
         cy.xpath("//*[@id='root']/section/section/section/div[2]/div[2]/div/div[2]/div[1]/div[4]/div/div[1]/input").click({force: true}).attachFile('catalogupload.csv')
         cy.get('.button-link').click();
-        cy.get('.Flexbox_flex-row__aKbHb.Flexbox_align-middle__-J0b5.rs-flex-box-grid-center > :nth-child(1)').type("0")
+        cy.get('.Flexbox_flex-row__aKbHb.Flexbox_align-middle__-J0b5.rs-flex-box-grid-center > :nth-child(0)').type("0")
         cy.get('.Flexbox_flex-row__aKbHb.Flexbox_align-middle__-J0b5.rs-flex-box-grid-center > :nth-child(2)').type("0")
         cy.get('.Flexbox_flex-row__aKbHb.Flexbox_align-middle__-J0b5.rs-flex-box-grid-center > :nth-child(3)').type("0")
         cy.get('.Flexbox_flex-row__aKbHb.Flexbox_align-middle__-J0b5.rs-flex-box-grid-center > :nth-child(4)').type("0")
@@ -27,14 +29,16 @@ describe("Catalog_Products Tab",function(){
 
        })
     
+
+
+
+    it('Second under describe block', () => {
+        cy.log("second  file")
     })
 
+})
 
-    it.only('Test 2 ', () => {
-    cy.log("Case 2 in catalog creation file");
-
-    })
-
+   
 
 
 
