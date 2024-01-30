@@ -5,14 +5,6 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
  projectId: 'd7scqt',
  reporter:'cypress-mochawesome-reporter',   // html reports 
-<<<<<<< HEAD
- 
- reporterOptions: {
-  reportDir: 'cypress/reports/html',
-  code: false,
-  charts: true,
-  autoOpen: true,
-=======
  // reporter: "cypress-multi-reporters",
  
  reporterOptions: {
@@ -22,20 +14,14 @@ module.exports = defineConfig({
   charts: true,
   autoOpen: true,
   html: false,
->>>>>>> f59fca4ea75536994dbe6da1b93d8ac50c9c9f29
   overwrite: true,
   json: true,
   jsonFolder: ".jsons",
   jsonReportFilename: "mochawesome-report"
-<<<<<<< HEAD
-    // Add any additional Mochawesome reporter options here
-},
-=======
   // Add any additional Mochawesome reporter options here
 },
 
 
->>>>>>> f59fca4ea75536994dbe6da1b93d8ac50c9c9f29
                                              
   e2e: { 
     watchForFileChanges:false,
