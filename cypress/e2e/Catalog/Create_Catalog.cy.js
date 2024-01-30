@@ -10,8 +10,6 @@ const ms = new LoginPage();
 
 describe("Catalog_Products Tab",function(){
     it('Catalog_Creation', () => {
-        cy.log("catalog file")
-       
         ms.loginnnnnn();
         cy.wait(2000)
         cy.visit("http://43.205.92.177/product/manage/upload");
@@ -36,9 +34,13 @@ describe("Catalog_Products Tab",function(){
         cy.log("second  file")
     })
 
+
+    it('Test 3 ', () => {
+    cy.log("Case 2 in catalog creation file");
+
+    })
+
+
+
+
 })
-
-   
-
-
-
