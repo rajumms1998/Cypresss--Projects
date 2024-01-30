@@ -9,22 +9,7 @@ import { LoginPage } from "../DashPom.cy"
 const ms = new LoginPage();
 
 describe("Catalog_Products Tab",function(){
-    it("Create the Catalog and Check the link", function(){
-        
-        cy.request({
-
-            URL:'https://hooks.slack.com/services/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', 
-            method: 'POST',
-            body: {
-                text:"Here is the Cypress Tests"
-
-            
-            },
-            headers: { 'Content-Type': 'application/json' }
-        })
-          
-          
-        
+    it('Catalog_Creation', () => {
         ms.loginnnnnn();
         cy.wait(2000)
         cy.visit("http://43.205.92.177/product/manage/upload");
@@ -42,8 +27,14 @@ describe("Catalog_Products Tab",function(){
 
        })
     
-    
-    }) 
+    })
+
+
+    it.only('Test 2 ', () => {
+    cy.log("Case 2 in catalog creation file");
+
+    })
+
 
 
 
