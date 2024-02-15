@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-15T06:50:02.978Z",
+    "end": "2024-02-15T06:50:03.374Z",
+    "duration": 396,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2a12739c-8720-430f-873e-6864370a8f9f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Stage_V1\\Stage\\jenkins_Reports.cy.js",
+      "file": "cypress\\e2e\\Stage_V1\\Stage\\jenkins_Reports.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3357a9fa-a237-4b44-af71-ea154c3b0e01",
+          "title": "Jenkins reports checking ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Reports in jenkins",
+              "fullTitle": "Jenkins reports checking  Reports in jenkins",
+              "timedOut": null,
+              "duration": 367,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "ef868fdf-1d83-4085-b129-9fc04c73d4d6",
+              "parentUUID": "3357a9fa-a237-4b44-af71-ea154c3b0e01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ef868fdf-1d83-4085-b129-9fc04c73d4d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 367,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\mochawesome-report\\.jsons",
+        "code": false,
+        "charts": true,
+        "autoOpen": true,
+        "html": false,
+        "overwrite": false,
+        "json": true,
+        "jsonFolder": ".jsons",
+        "jsonReportFilename": "mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

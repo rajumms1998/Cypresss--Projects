@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-15T06:46:59.867Z",
+    "end": "2024-02-15T06:47:55.438Z",
+    "duration": 55571,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5434868-1fc5-47f8-b809-7539ae0255d5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Stage_V1\\Stage\\BumperPriceValidation_Stage.cy.js",
+      "file": "cypress\\e2e\\Stage_V1\\Stage\\BumperPriceValidation_Stage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6c69c8b-2a86-4069-b0e4-3cb4fa6d570c",
+          "title": "BUMPER_CUPON",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifying the Bumper Coupon is activation after First Order",
+              "fullTitle": "BUMPER_CUPON Verifying the Bumper Coupon is activation after First Order",
+              "timedOut": null,
+              "duration": 52953,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\BumperPriceValidation_Stage.cy.js\\\\BUMPER_CUPON -- Verifying the Bumper Coupon is activation after First Order.png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {},
+              "uuid": "319b60ac-bd25-40ab-bd1b-3ca59418110b",
+              "parentUUID": "f6c69c8b-2a86-4069-b0e4-3cb4fa6d570c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "319b60ac-bd25-40ab-bd1b-3ca59418110b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 52953,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\mochawesome-report\\.jsons",
+        "code": false,
+        "charts": true,
+        "autoOpen": true,
+        "html": false,
+        "overwrite": false,
+        "json": true,
+        "jsonFolder": ".jsons",
+        "jsonReportFilename": "mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

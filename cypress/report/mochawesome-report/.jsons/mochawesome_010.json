@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-15T06:50:23.158Z",
+    "end": "2024-02-15T06:50:39.563Z",
+    "duration": 16405,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "402958a7-d9f5-40e9-9bef-6a34ad2e56f3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Stage_V1\\Stage\\Order_Placement_with_Bumpe_Stager.cy.js",
+      "file": "cypress\\e2e\\Stage_V1\\Stage\\Order_Placement_with_Bumpe_Stager.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0f7c447-3ecb-4b23-93ee-5ab606c1adcd",
+          "title": "BUMPER_CUPON",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifying the Bumper Coupon is activation after First Order",
+              "fullTitle": "BUMPER_CUPON Verifying the Bumper Coupon is activation after First Order",
+              "timedOut": null,
+              "duration": 14182,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Order_Placement_with_Bumpe_Stager.cy.js\\\\BUMPER_CUPON -- Verifying the Bumper Coupon is activation after First Order (failed).png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.css-1vw8438`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.css-1vw8438`, but never found it.\n    at Context.eval (webpack://cypressprojects_001/./cypress/e2e/Stage_V1/Stage/Order_Placement_with_Bumpe_Stager.cy.js:11:15)",
+                "diff": null
+              },
+              "uuid": "1e40c5a5-4507-4164-8cea-17be17052f12",
+              "parentUUID": "d0f7c447-3ecb-4b23-93ee-5ab606c1adcd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1e40c5a5-4507-4164-8cea-17be17052f12"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14182,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\mochawesome-report\\.jsons",
+        "code": false,
+        "charts": true,
+        "autoOpen": true,
+        "html": false,
+        "overwrite": false,
+        "json": true,
+        "jsonFolder": ".jsons",
+        "jsonReportFilename": "mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 ///<reference types = "cypress-xpath"/>
 import 'cypress-file-upload' 
 
-import { LoginPage} from "../Stage/DashPom.cy"
+import { LoginPage} from "../POM/DashPom.cy"
 
 
 
@@ -25,22 +25,13 @@ describe("Catalog_Products Tab",function(){
        cy.contains("Reports").click();
 
 
-       })
-    
+       }).catch(error => {
+        console.error(error);
+      });
+ 
 
 
-
-    it('Second under describe block', () => {
-        cy.log("second  file")
-    })
-
-
-    it('Test 3 ', () => {
-    cy.log("Case 2 in catalog creation file");
-
-    })
-
-
+   
 
 
 })

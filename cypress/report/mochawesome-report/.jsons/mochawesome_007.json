@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-15T06:49:21.300Z",
+    "end": "2024-02-15T06:50:01.298Z",
+    "duration": 39998,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "135b89b9-710a-4de6-aae1-c43631ab5f36",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Stage_V1\\Stage\\Generic_Coupon_Stage.cy.js",
+      "file": "cypress\\e2e\\Stage_V1\\Stage\\Generic_Coupon_Stage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "50dadb78-277d-4513-ba8b-1bb94a69fe4a",
+          "title": "Creating the Generic Coupon and its validation on website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Coupon_Creation from Dashboard ",
+              "fullTitle": "Creating the Generic Coupon and its validation on website Coupon_Creation from Dashboard ",
+              "timedOut": null,
+              "duration": 12832,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Generic_Coupon_Stage.cy.js\\\\Creating the Generic Coupon and its validation on website -- Coupon_Creation from Dashboard.png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {},
+              "uuid": "484626b0-afbc-4f74-a673-595d28fc5296",
+              "parentUUID": "50dadb78-277d-4513-ba8b-1bb94a69fe4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validating the Created Coupon and apply the coupon",
+              "fullTitle": "Creating the Generic Coupon and its validation on website Validating the Created Coupon and apply the coupon",
+              "timedOut": null,
+              "duration": 25007,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Generic_Coupon_Stage.cy.js\\\\Creating the Generic Coupon and its validation on website -- Validating the Created Coupon and apply the coupon.png\",\n      \"\\\\Generic_Coupon_Stage.cy.js\\\\Creating the Generic Coupon and its validation on website -- Validating the Created Coupon and apply the coupon (failed).png\"\n    ]\n  ]\n}",
+              "code": "",
+              "err": {
+                "message": "ReferenceError: offerText is not defined",
+                "estack": "ReferenceError: offerText is not defined\n    at Context.eval (webpack://cypressprojects_001/./cypress/e2e/Stage_V1/Stage/Generic_Coupon_Stage.cy.js:110:19)",
+                "diff": null
+              },
+              "uuid": "d7a447d9-875c-4abe-a830-dddbda8b9681",
+              "parentUUID": "50dadb78-277d-4513-ba8b-1bb94a69fe4a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "484626b0-afbc-4f74-a673-595d28fc5296"
+          ],
+          "failures": [
+            "d7a447d9-875c-4abe-a830-dddbda8b9681"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37839,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\mochawesome-report\\.jsons",
+        "code": false,
+        "charts": true,
+        "autoOpen": true,
+        "html": false,
+        "overwrite": false,
+        "json": true,
+        "jsonFolder": ".jsons",
+        "jsonReportFilename": "mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-15T06:46:00.996Z",
+    "end": "2024-02-15T06:46:18.166Z",
+    "duration": 17170,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c148c9c0-8dad-4413-8e6b-8877aa927aa7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Stage_V1\\Stage\\Announcementbar_Stage.cy.js",
+      "file": "cypress\\e2e\\Stage_V1\\Stage\\Announcementbar_Stage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Announcement bar Creation",
+          "fullTitle": "Announcement bar Creation",
+          "timedOut": null,
+          "duration": 14651,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Announcementbar_Stage.cy.js\\\\Announcement bar Creation (failed).png\"\n    ]\n  ]\n}",
+          "code": "",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.Flexbox_mb-sm__8zp99 > .rs-flex-box-grid-item > .Input_input-group__c6y0f`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `.Flexbox_mb-sm__8zp99 > .rs-flex-box-grid-item > .Input_input-group__c6y0f`, but never found it.\n    at Context.eval (webpack://cypressprojects_001/./cypress/e2e/Stage_V1/Stage/Announcementbar_Stage.cy.js:12:3)",
+            "diff": null
+          },
+          "uuid": "863a69fd-ba44-4389-a9e5-ff80f79ca1c4",
+          "parentUUID": "c148c9c0-8dad-4413-8e6b-8877aa927aa7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "863a69fd-ba44-4389-a9e5-ff80f79ca1c4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 14651,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\mochawesome-report\\.jsons",
+        "code": false,
+        "charts": true,
+        "autoOpen": true,
+        "html": false,
+        "overwrite": false,
+        "json": true,
+        "jsonFolder": ".jsons",
+        "jsonReportFilename": "mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -21,7 +21,6 @@ module.exports = defineConfig({
   // Add any additional Mochawesome reporter options here
 },
 
-
                                              
   e2e: { 
     watchForFileChanges:false,
